@@ -67,7 +67,9 @@ for(let i of team){
 
     } else if (key == 'image'){
       console.log('condizione image è vera')
-      
+      img = document.createElement ('img');
+      img.src = `${i[key]}`
+      card.append(img)
     } else {
       console.log('condizione sconosciuta')
     }
