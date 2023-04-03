@@ -10,7 +10,9 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 Utilizzate liberamente il tipo di ciclo che preferite (for, for in o for of)
 
 MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringheBONUS 1:
+Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 
 BONUS 2:
