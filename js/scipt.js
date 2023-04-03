@@ -8,34 +8,34 @@
 
 const team = [
 {
+  image : 'img/wayne-barnett-founder-ceo.jpg',
   nome : 'Wayne Barnett',
   role : 'CEO',
-  image : 'img/wayne-barnett-founder-ceo.jpg'
 },
 {
+  image : 'img/angela-caroll-chief-editor.jpg',
 nome : 'Angela Caroll',
 role : 'chief editor',
-image : 'img/angela-caroll-chief-editor.jpg'
 },
 {
+  image : 'img/walter-gordon-office-manager.jpg',
 nome : 'Walter Gordon',
 role : 'office menager',
-image : 'img/walter-gordon-office-manager.jpg'
 },
 {
+  image : 'img/angela-lopez-social-media-manager.jpg',
 nome : 'Angela Lopez',
 role : 'social media menager',
-image : 'img/angela-lopez-social-media-manager.jpg'
 },
 {
+  image : 'img/scott-estrada-developer.jpg',
 nome : 'Scott Estrada',
 role : 'Developer',
-image : 'img/scott-estrada-developer.jpg'
 },
 {
+  image : 'img/barbara-ramos-graphic-designer.jpg',
 nome : 'Barbara Ramos',
 role : 'graphic Designer',
-image : 'img/barbara-ramos-graphic-designer.jpg'
 },
 ]
 console.log('team array', team)
@@ -62,12 +62,14 @@ for(let i of team){
     } else if (key == 'role') {
       console.log('condizione role è vera')
       rol = document.createElement ('span');
+      rol.style.display ='block'
       rol.innerHTML = `${i[key]}`
       card.append(rol)
 
     } else if (key == 'image'){
       console.log('condizione image è vera')
       img = document.createElement ('img');
+      img.className = 'card_photo'
       img.src = `${i[key]}`
       card.append(img)
     } else {

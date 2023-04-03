@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+  font-family:monospace;
+}
+
+#main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.521);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.card_photo {
+  width: 350px;
+}
+
+.card span {
+  margin-bottom: 10px;
+}
