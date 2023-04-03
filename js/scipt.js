@@ -42,26 +42,37 @@ console.log('team array', team)
 
 const main = document.getElementById('main_container');
 console.log(main)
-id = 0;
+
 // CICLARE ARRAY CON FOR OF PER LEGGERE L OGGETTO A SUA VOLTA CICLATO PER LOGGARE LE SUE CHIAVI
+id = 0;
 for(let i of team){
   console.log(i)
+  card = document.createElement ('div');
+  card.className = 'card';
   id ++;
-  main.innerHTML += `<div id=${id} class="card"> card </div>`
+  card.id = id;
   for ( let key in i){
     console.log(key)
     if (key == 'nome'){
       console.log('condizione nome è vera')
-
+      nam = document.createElement ('h1');
+      nam.innerHTML = `${i[key]}`
+      card.append(nam)
+      
     } else if (key == 'role') {
       console.log('condizione role è vera')
+      rol = document.createElement ('span');
+      rol.innerHTML = `${i[key]}`
+      card.append(rol)
 
     } else if (key == 'image'){
       console.log('condizione image è vera')
-
+      
     } else {
       console.log('condizione sconosciuta')
     }
+
+    main.append(card);
   }
 }
 
