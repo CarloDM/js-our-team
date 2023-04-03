@@ -38,18 +38,22 @@ nome : 'Barbara Ramos',
 role : 'graphic Designer',
 },
 ]
-console.log('team array', team)
+
 
 const main = document.getElementById('main_container');
 
 // CICLARE ARRAY CON FOR OF PER LEGGERE L OGGETTO A SUA VOLTA CICLATO PER LOGGARE LE SUE CHIAVI
-id = 0;
+let id = 0; /* per dare id univoco ad ogni card */
+
+// per ogni oggetto trovato si genera una card...
 for(let i of team){
+  console.log('---------------')
   console.log(i)
   card = document.createElement ('div');
   card.className = 'card';
   id ++;
   card.id = id;
+// all interno dell oggetto trovato cicla le chiavi e per ognuna si append tag e contenuti specifici alla card...
   for ( let key in i){
     console.log(i[key])
     if (key == 'nome'){
@@ -69,13 +73,13 @@ for(let i of team){
       img.src = `${i[key]}`
       card.append(img)
     } else {
-      console.warn('condizione sconosciuta')
+      console.warn('chiave non prevista')
     }
-
-    main.append(card);
   }
+  // fuori da secondo ciclo e alla fine del primo inseriamo la card completa di tutto
+  main.append(card);
 }
-
+// <----------------------------- fine
 
 
 
