@@ -15,27 +15,27 @@ const team = [
 {
 nome : 'Angela Caroll',
 role : 'chief editor',
-image : 'img\angela-caroll-chief-editor.jpg'
+image : 'img/angela-caroll-chief-editor.jpg'
 },
 {
 nome : 'Walter Gordon',
 role : 'office menager',
-image : 'img\walter-gordon-office-manager.jpg'
+image : 'img/walter-gordon-office-manager.jpg'
 },
 {
 nome : 'Angela Lopez',
 role : 'social media menager',
-image : 'img\angela-lopez-social-media-manager.jpg'
+image : 'img/angela-lopez-social-media-manager.jpg'
 },
 {
 nome : 'Scott Estrada',
 role : 'Developer',
-image : 'img\scott-estrada-developer.jpg'
+image : 'img/scott-estrada-developer.jpg'
 },
 {
 nome : 'Barbara Ramos',
 role : 'graphic Designer',
-image : 'img\barbara-ramos-graphic-designer.jpg'
+image : 'img/barbara-ramos-graphic-designer.jpg'
 },
 ]
 console.log('team array', team)
