@@ -41,7 +41,6 @@ role : 'graphic Designer',
 console.log('team array', team)
 
 const main = document.getElementById('main_container');
-console.log(main)
 
 // CICLARE ARRAY CON FOR OF PER LEGGERE L OGGETTO A SUA VOLTA CICLATO PER LOGGARE LE SUE CHIAVI
 id = 0;
@@ -52,28 +51,25 @@ for(let i of team){
   id ++;
   card.id = id;
   for ( let key in i){
-    console.log(key)
+    console.log(i[key])
     if (key == 'nome'){
-      console.log('condizione nome è vera')
       nam = document.createElement ('h1');
       nam.innerHTML = `${i[key]}`
       card.append(nam)
       
     } else if (key == 'role') {
-      console.log('condizione role è vera')
       rol = document.createElement ('span');
       rol.style.display ='block'
       rol.innerHTML = `${i[key]}`
       card.append(rol)
 
     } else if (key == 'image'){
-      console.log('condizione image è vera')
       img = document.createElement ('img');
       img.className = 'card_photo'
       img.src = `${i[key]}`
       card.append(img)
     } else {
-      console.log('condizione sconosciuta')
+      console.warn('condizione sconosciuta')
     }
 
     main.append(card);
