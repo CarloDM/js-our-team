@@ -38,10 +38,16 @@ role : 'graphic Designer',
 image : 'img\barbara-ramos-graphic-designer.jpg'
 },
 ]
-
-
-
-
 console.log('team array', team)
+
+// CICLARE ARRAY CON FOR OF PER LEGGERE L OGGETTO A SUA VOLTA CICLATO PER LOGGARE LE SUE CHIAVI
+for(let i of team){
+  console.log(i)
+  for ( let key in i){
+    console.log(i[key])
+  }
+}
+
+
 
 
